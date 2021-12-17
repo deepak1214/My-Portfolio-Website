@@ -23,7 +23,7 @@ p {
   line-height: 2.5rem;
   font-weight: 300;
   color: black;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 .container {
   min-height: 100vh;
@@ -51,8 +51,8 @@ p {
 }
 #header .header {
   min-height: 8vh;
-  background-color: rgba(31,30,30,0.24);
-  transition: .3s ease background-color;
+  background-color: rgba(31, 30, 30, 0.24);
+  transition: 0.3s ease background-color;
 }
 #header .nav-bar {
   display: flex;
@@ -63,10 +63,10 @@ p {
   max-width: 1300px;
   padding: 0 10px;
 }
-#header .nav-list ul{
+#header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgb(31,30,30);
+  background-color: rgb(31, 30, 30);
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -76,44 +76,44 @@ p {
   align-items: center;
   z-index: 1;
   overflow-x: hidden;
-  transition: .5s ease left;
+  transition: 0.5s ease left;
 }
-#header .nav-list ul.active{
+#header .nav-list ul.active {
   left: 0;
 }
-#header .nav-list ul a{
+#header .nav-list ul a {
   font-size: 2rem;
   font-weight: 500;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   padding: 20px;
   display: block;
 }
-#header .nav-list ul a::after{
+#header .nav-list ul a::after {
   content: attr(data-after);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%) scale(0);
-  color: rgba(240,248,255,0.21);
+  transform: translate(-50%, -50%) scale(0);
+  color: rgba(240, 248, 255, 0.21);
   font-size: 13rem;
   letter-spacing: 50px;
   z-index: -1;
-  transition: .3s ease letter-spacing;
+  transition: 0.3s ease letter-spacing;
 }
-#header .nav-list ul a:hover{
+#header .nav-list ul a:hover {
   color: crimson;
 }
-#header .nav-list ul li:hover a::after{
-  transform: translate(-50%,-50%) scale(1);
+#header .nav-list ul li:hover a::after {
+  transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial;
 }
 #header .hamburger {
   height: 60px;
   width: 60px;
-  display:inline-block;
+  display: inline-block;
   border: 3px solid white;
   border-radius: 50%;
   position: relative;
@@ -127,7 +127,7 @@ p {
 }
 #header .hamburger::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -143,14 +143,14 @@ p {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
   background-color: white;
-  transition: .3s ease;
-  transition-property: top , bottom;
+  transition: 0.3s ease;
+  transition-property: top, bottom;
 }
 #header .hamburger .bar::before {
   bottom: 8px;
@@ -165,7 +165,6 @@ p {
   top: 0;
 }
 /* Header Section Ends */
-
 
 /* Hero Section */
 #hero {
@@ -187,10 +186,10 @@ p {
   z-index: -1;
 }
 #hero .hero {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
 }
 #hero h1 {
   display: block;
@@ -209,7 +208,7 @@ p {
   animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
-  animation: text_reveal_name .5s ease forwards;
+  animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
 #hero h1 span {
@@ -252,39 +251,37 @@ p {
 
 /* Skills Section */
 #Skills {
-
 }
 #Skills .Skills {
-    flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 .section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-    margin-bottom: 10px;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
 }
 .section-title span {
-    color: crimson;
+  color: crimson;
 }
 #Skills .Skills-top {
   max-width: 500px;
   margin: 0 auto;
 }
 #Skills .Skills-top p {
-    font-size: 1.5 rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    color: black;
-    letter-spacing: .05rem;
-
+  font-size: 1.5 rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  color: black;
+  letter-spacing: 0.05rem;
 }
 #Skills .Skills-bottom {
   display: flex;
@@ -305,7 +302,6 @@ p {
 #Skills .Skills-contents p {
   color: white;
   text-align: left;
-  
 }
 #Skills .Skills-contents {
   flex-basis: 80%;
@@ -317,22 +313,21 @@ p {
   border-radius: 10px;
   background-image: url(./img/img-1.png);
   background-size: cover;
-  margin: 10px 5% ;
+  margin: 10px 5%;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 #Skills .Skills-contents::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg,#29323c 0% ,#485563 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0.9;
   z-index: -1;
-  
 }
 /* Skills Section Ends */
 /* Project Section */
@@ -369,7 +364,7 @@ p {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background-image: linear-gradient(60deg ,#29323c 0% ,#485563 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   color: white;
 }
 #projects .project-info h1 {
@@ -391,17 +386,17 @@ p {
   position: relative;
 }
 #projects .project-img::after {
-  content:'';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg,#29323c 0% ,#485563 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0.7;
 }
-#projects .project-img img{
-  transition: .3s ease transform;
+#projects .project-img img {
+  transition: 0.3s ease transform;
 }
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
@@ -444,13 +439,13 @@ p {
   border: 10px solid white;
 }
 #about .col-left .about-img img {
-  transition: .3s ease transform;
+  transition: 0.3s ease transform;
 }
 #about .col-left .about-img img:hover {
   transform: scale(1.1);
 }
-#about .col-left .about-img::after{
-  content: '';
+#about .col-left .about-img::after {
+  content: "";
   position: absolute;
   left: -33px;
   top: 19px;
@@ -481,7 +476,7 @@ p {
   justify-content: center;
   flex-direction: column;
   box-shadow: 0px 0px 18px 0px #0000002c;
-  transition: .3s ease box-shadow;
+  transition: 0.3s ease box-shadow;
 }
 #contact .contact-item:hover {
   box-shadow: 0px 0px 5px 0px #0000002c;
@@ -497,15 +492,14 @@ p {
   margin-bottom: 5px;
 }
 #contact .contact-info h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 2rem;
 }
 /* Contact Section Ends */
 /* Footer Section */
 #footer {
-  background-image: linear-gradient(60deg,#29323c 0% ,#485563 100%);
-
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 #footer .footer {
   min-height: 200px;
@@ -531,11 +525,11 @@ p {
   width: 50px;
   margin: 0 5px;
 }
-#footer .social-item img{
+#footer .social-item img {
   filter: grayscale(1);
-  transition: .3s ease filter;
+  transition: 0.3s ease filter;
 }
-#footer .social-item:hover img{
+#footer .social-item:hover img {
   filter: grayscale(0);
 }
 #footer p {
@@ -571,10 +565,10 @@ p {
   }
 }
 @keyframes text_reveal_name {
-    100% {
-        color:rgb(255, 0, 51);
-        font-weight: 500;
-    }
+  100% {
+    color: rgb(255, 0, 51);
+    font-weight: 500;
+  }
 }
 /* keyframes Ends */
 
@@ -638,7 +632,7 @@ p {
     text-align: left;
     padding: 30px;
   }
-  #about .col-right h1{
+  #about .col-right h1 {
     text-align: left;
   }
   /* ABout End */
@@ -654,12 +648,12 @@ p {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding : 30px;
     justify-content: space-evenly;
     margin: 0;
   }
   #contact .contact-item {
     width: 30%;
+    margin: 0;
     flex-direction: row;
   }
   #contact .contact-item .icon {
@@ -686,22 +680,22 @@ p {
   #header .nav-list ul {
     position: initial;
     display: block;
-    height: auto ;
+    height: auto;
     width: fit-content;
     background-color: transparent;
   }
-  #header .nav-list ul li{
+  #header .nav-list ul li {
     display: inline-block;
   }
-  #header .nav-list ul li a{
+  #header .nav-list ul li a {
     font-size: 1.8rem;
   }
-  #header .nav-list ul a::after{
+  #header .nav-list ul a::after {
     display: none;
   }
 
   /* Header Section Ends */
-  
+
   /* Skills Section */
   #Skills .Skills-bottom .Skills-contents {
     flex-basis: 22%;
